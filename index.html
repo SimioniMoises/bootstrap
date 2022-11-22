@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+
+    <title>Bricando com Bootstrap</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-id">
+                    <span class="sr only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="#"> Conheça</a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-id">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#primeiro-titulo"> Um titulo Bacana </a></li>
+                    <li><a href="#segundo-titulo"> Copa do Mundo</a></li>
+                    <li><a href="#terceiro-titulo"> Enem 2022 </a></li>
+                    <li><a href="#quarto-titulo"> Novo Texto </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="alterar" class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="width: 100%;">
+            100%
+        </div>
+    </div>
+
+    <div id="mudar" class="alert alert-success" role="alert"> SEJA BEM VINDO AO SITE!</div>
+
+    <div class="container">
+        <h2 id="primeiro-titulo"> Titulo Bacana </h2>
+        <img class="imagem" class="img-responsive" src="/assets/fulequinho.png">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-group" id="todos-paineis"></div>
+                <h2 id="segundo-titulo" class="panel-title" data-toggle="collapse" data-target="#firstP"
+                    data-parent="#todos-paineis">
+                    Copa do Mundo
+                </h2>
+            </div>
+
+            <div id="firstP" class="collapse panel-body">
+                <p> Catar estreia a Copa do Mundo de 2022 com derrota por 2x0 para o Equador </p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-group" id="todos-paineis"></div>
+                <h2 id="terceiro-titulo" class="panel-title" data-toggle="collapse" data-target="#SecondP"
+                    data-parent="#todos-paineis">
+                    Enem 2022
+                </h2>
+            </div>
+            <div id="SecondP" class="collapse panel-body">
+                <p> Confira os estudandes que chegaram atrasados para o segundo dia do exame </p>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+
+                <h2 id="quarto-titulo"> Novo Texto </h2>
+                <p> Quem é você? </p>
+                <p> O que faz aqui? </p>
+                <p><a class="btn btn-primary btn-lg" href="https://moviecom.com.br/escolha" target="_blank"
+                        role="button">
+                        Fique por dentro </a></p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="carrosel-pos" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carrosel-pos" data-slide="0" class="active"> </li>
+                    <li data-target="#carrosel-pos" data-slide="1"> </li>
+                    <li data-target="#carrosel-pos" data-slide="2"> </li>
+                    <li data-target="#carrosel-pos" data-slide="3"> </li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img id="imagem" src="/assets/arvore.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img id="imagem" src="/assets/pgirl.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img id="imagem" src="/assets/reloginho.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img id="imagem" src="/assets/indeciso.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/jquery.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>
